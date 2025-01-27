@@ -1,1 +1,79 @@
-/* место для вашего кода */
+.header {
+  height: 293px;
+  padding: 92px 50px 96px 50px;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+  
+  font-size: 18px;
+  list-style: circle;
+  text-decoration: underline;
+}
+
+.first-nav {
+  list-style: none;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  height: 104px;
+}
+
+.adress {
+  font-size: 18px;
+  margin-left: 192px;
+  line-height: 140%;
+}
+
+.main {
+
+}
+
+.cover {
+  color: white;
+  height: 757px;
+  padding: 165px 50px 50px 50px;
+  background-image: url(/images/cover.jpg);
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+.description {
+
+}
+
+.button {
+  color: white;
+  text-transform: uppercase;
+}
+
+.lots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 74px min-content 53px;
+  height: 723px;
+  margin: 180px 24px 120px 24px;
+}
+
+.cards {
+
+}
+
+.card {
+
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: gray; /* это надо будет убрать потом */
+  height: 595px;
+  margin: 0px 24px 180px 24px;
+}
+
