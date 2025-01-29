@@ -30,10 +30,6 @@
   line-height: 140%;
 }
 
-.main {
-
-}
-
 .cover {
   position: relative;
   color: white;
@@ -58,7 +54,7 @@
   display: block;
   font-size: 100px;
   font-weight: bold;
-  line-height: 115%;
+  line-height: 1.3em;
   letter-spacing: 0.3em;
 }
 
@@ -77,11 +73,12 @@
   display: flex;
   font-size: 22px;
   font-weight: normal;
-  word-spacing: 0.8em;
+  word-spacing: 0.85em;
+  justify-content: space-between;
 }
 
 .description-text {
-  align-self: left;
+  align-content: center;
 }
 
 .description-button {
@@ -89,19 +86,23 @@
   z-index: 2;
   background: transparent;
   color: white;
+  border-color: white;
+  padding: 12px 32px 11px 31px;
   text-transform: uppercase;
-  justify-self: right;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .lots {
   display: grid;
-  grid-template-rows: 74px min-content 53px;
+  grid-template-rows: auto;
   margin: 180px 24px 120px 24px;
 }
 
 .lots-title {
   display: block;
   margin-left: 40px;
+  margin-bottom: 27px;
   grid-column-start: 1;
   grid-column-end: 4;
   font-size: 40px;
@@ -111,6 +112,8 @@
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
 }
 
@@ -136,6 +139,8 @@ a {
   padding: 48px 40px 48px 40px;
 }
 
+/* TODO: переименовать классы */
+
 .lot-1 {
   background-image: url(/images/card-lot-01.jpg);
   background-size: cover;
@@ -157,7 +162,7 @@ a {
 .card-title {
   text-transform: uppercase;
   text-decoration: underline;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
   font-size: 22px;
 }
 
@@ -179,8 +184,43 @@ a {
 
 .about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 359px 1fr;
   height: 595px;
   margin: 0px 24px 180px 24px;
+}
+
+.logo-white {
+  display: block;
+  width: 142px;
+  height: 112px;
+}
+
+.background-circle {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 47px;
+  justify-content: center;
+  background-color: black;
+  width: 240px;
+  height: 240px;
+  border-radius: 240px;
+}
+
+.about-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 100px;
+  margin-top: 136px;
+  text-transform: uppercase;
+}
+
+.about-content {
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.br {
+  margin-bottom: 24px;
 }
 
