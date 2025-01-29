@@ -48,8 +48,6 @@
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: 1;
-  height: 757px; 
-  width: 1100px;
   background-color: black;
   opacity: 60%;
 }
@@ -92,29 +90,96 @@
   background: transparent;
   color: white;
   text-transform: uppercase;
-  justify-selfww: right;
+  justify-self: right;
 }
 
 .lots {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 74px min-content 53px;
-  height: 723px;
   margin: 180px 24px 120px 24px;
 }
 
-.cards {
+.lots-title {
+  display: block;
+  margin-left: 40px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
+.cards {
+  display: flex;
+  gap: 25px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  color: white;
+}
+
+a {
+  height: 100%;
 }
 
 .card {
+  position: relative;
+  z-index: 2;
+  width: 334px;
+  max-height: 596px;
+  padding: 48px 40px 48px 40px;
+}
 
+.lot-1 {
+  background-image: url(/images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.lot-2 {
+  background-image: url(/images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
+  }
+
+.lot-3 {
+  background-image: url(/images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-title {
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+.card-description {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2em;
+}
+
+.lots-button {
+  display: block;
+  margin-left: 40px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-decoration: underline;
+  margin-top: 30px;
+  font-size: 20px;
 }
 
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: gray; /* это надо будет убрать потом */
   height: 595px;
   margin: 0px 24px 180px 24px;
 }
