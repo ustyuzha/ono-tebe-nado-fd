@@ -13,20 +13,20 @@
     <header class='header'>
       <nav>
         <ul class='nav'>
-          <li class='first-nav'>главная</li>
-          <li>посмотреть лоты</li>
-          <li>об аукционе</li>
+          <li>главная</li>
+          <li class='nav__decorated'>посмотреть лоты</li>
+          <li class='nav__decorated'>об аукционе</li>
         </ul>
       </nav>
       <a>
         <img 
           src='/images/logo-black.svg'
           class='logo'
-          alt='Логотип проект, надпись "Оно тебе надо"'>
+          alt='Логотип проекта, надпись "Оно тебе надо"'>
       </a>
-      <adress class="adress"> 
-        <a href="tel:+70000000">+9 999 555 5555</a><br>
-        <a href="mailto:mail@example.com">info@sobaka.ge</a><br>
+      <adress class="adress adress__header"> 
+        <a href="tel:+70000000">+9 999 555 5555</a>
+        <a href="mailto:mail@example.com">info@sobaka.ge</a>
         наб. Принсенграхт 263-<br>
         265, Амстердам
       </adress>
@@ -36,8 +36,8 @@
           <div class="overlay"></div>
           <h1>
             <span class="cover-title">оно</span> 
-            <span class="cover-title text-center">тебе</span>
-            <span class="cover-title text-bottom">надо</span>
+            <span class="cover-title text-center">теб<span class="cover-title__last-letter">е</span></span>
+            <span class="cover-title text-bottom">над<span class="cover-title__last-letter">о</span></span>
           </h1>
           <div class='description'>
             <p class="description-text">
@@ -102,7 +102,8 @@
           <div>
             <h2 class="about-title">
               об аукционе
-            </h2>
+            </h2> 
+            <!-- ТУТ НУЖНО ПЕРЕДЕЛАТЬ br на неразрывный пробел (типограф, Лебедев) -->
             <p class="about-content br">
               Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. 
               Наши лоты вообще не должны были попасть<br>ни на один аукцион. Потому что кому нужен 
@@ -120,24 +121,44 @@
         </section>
       </main>
     <footer class="footer">
-      <adress class="adress"> 
-        <a href="tel:+70000000">+9 (999) 555-55-55</a><br>
-        <a href="mailto:mail@example.com">info@sobaka.ge</a><br>
-        наб. Принсенграхт<br>
-        263- 265, Амстердам
+      <adress class="adress adress__footer"> 
+        <a href="tel:+70000000">+9 999 555 5555</a>
+        <a href="mailto:mail@example.com">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263-265,<br>
+         Амстердам</p>
       </adress>
-      <nav class="nav">
-        <span>
-          главная
-        </span>
-        <span>
-          посмотреть лоты
-        </span>
-        <span>
-          об аукционе
-        </span>
+      <nav>
+        <ul class='nav nav__vertical'>
+          <li>
+            <a>главная</a>
+          </li>
+          <li class='nav__decorated nav__vertical'>
+            <a>посмотреть лоты</a>
+          </li>
+          <li class='nav__decorated nav__vertical'>
+            <a>об аукционе</a>
+          </li>
+        </ul>
       </nav>
-      <!-- тут нужно сделать ссылки на сосети -->
+      <div>
+        <ul class="social-media">
+          <li>
+            <a>
+              <img src="/images/yt.svg" class="social-media__image">
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="/images/vk.svg" class="social-media__image">
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="/images/pinterest.svg" class="social-media__image">
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

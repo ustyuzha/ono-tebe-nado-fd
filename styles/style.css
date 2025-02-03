@@ -10,31 +10,40 @@
   display: flex;
   gap: 32px;
   font-size: 18px;
-  list-style: circle;
-  text-decoration: underline;
 }
 
-.first-nav {
-  list-style: none;
-  text-decoration: none;
+.nav__decorated {
+  list-style: circle;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .logo {
   display: block;
-  height: 104px;
+  height: 106px;
+  width: 136px;
 }
 
 .adress {
+  /* max-width: 240px; */
+  display: flex;
+  flex-direction: column;
+  padding-right: 36px;
   font-size: 18px;
-  margin-left: 192px;
   line-height: 140%;
+  text-underline-offset: 4px;
+  
+}
+
+.adress__header {
+  justify-self: end;
 }
 
 .cover {
   position: relative;
   color: white;
   height: 757px;
-  padding: 165px 50px 50px 50px;
+  padding: 160px 50px 50px 50px;
   background-image: url(/images/cover.jpg);
   background-size: auto 100%;
   text-transform: uppercase;
@@ -54,7 +63,7 @@
   display: block;
   font-size: 100px;
   font-weight: bold;
-  line-height: 1.3em;
+  line-height: 1.32em;
   letter-spacing: 0.3em;
 }
 
@@ -64,12 +73,16 @@
 
 .text-bottom {
   text-align: right;
+  margin-bottom: 100px;
+}
+
+.cover-title__last-letter {
+  letter-spacing: 0;
 }
 
 .description {
   position: relative;
   z-index: 2;
-  margin-top: 106px;
   display: flex;
   font-size: 22px;
   font-weight: normal;
@@ -191,8 +204,8 @@ a {
 
 .logo-white {
   display: block;
-  width: 142px;
-  height: 112px;
+  width: 150px;
+  height: 120px;
 }
 
 .background-circle {
@@ -222,5 +235,35 @@ a {
 
 .br {
   margin-bottom: 24px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 50px 82px 50px;
+}
+
+.nav__vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  gap: 0;
+}
+
+.address__footer {
+  justify-self: flex-start;
+}
+
+.social-media {
+  display: flex;
+  justify-content: end;
+  gap: 48px;
+}
+
+.social-media__image {
+  max-width: 48px;
+  max-height: 48px;
 }
 
