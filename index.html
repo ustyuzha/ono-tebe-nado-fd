@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
     <link href='./fonts/fonts.css' rel='stylesheet'>
     <link href='./styles/global.css' rel='stylesheet'>
@@ -11,65 +11,65 @@
   </head>
   <body>
     <header class='header'>
-      <nav>
-        <ul class='nav'>
+      <nav class='header__menu'>
+        <ul class='header__links-list'>
           <li>главная</li>
-          <li class='nav__decorated'>посмотреть лоты</li>
-          <li class='nav__decorated'>об аукционе</li>
+          <li class='header__links-list-decorated-item'>посмотреть лоты</li>
+          <li class='header__links-list-decorated-item'>об аукционе</li>
         </ul>
       </nav>
-      <a>
+      <a class="header__logo">
         <img 
           src='/images/logo-black.svg'
-          class='logo'
+          class='header__logo-image'
           alt='Логотип проекта, надпись "Оно тебе надо"'>
       </a>
-      <adress class="adress adress__header"> 
+      <div class="adress adress header__adress"> 
         <a href="tel:+70000000">+9 999 555 5555</a>
         <a href="mailto:mail@example.com">info@sobaka.ge</a>
         наб. Принсенграхт 263-<br>
         265, Амстердам
-      </adress>
+      </div>
     </header>
       <main class="main">
         <section class="cover">
           <div class="overlay"></div>
           <h1>
-            <span class="cover-title">оно</span> 
-            <span class="cover-title text-center">теб<span class="cover-title__last-letter">е</span></span>
-            <span class="cover-title text-bottom">над<span class="cover-title__last-letter">о</span></span>
+            <span class="aligned-text">оно</span> 
+            <span class="aligned-text aligned-text_center">теб<span class="no-letter-spacing">е</span></span>
+            <span class="aligned-text aligned-text_right">над<span class="no-letter-spacing">о</span></span>
           </h1>
-          <div class='description'>
-            <p class="description-text">
+          <div class='cover__description'>
+            <p class="cover__description-text">
               аукцион вещей, в которые никто не верил
             </p>
-            <button class="description-button">
+            <button class="bet-button">
               сделать ставку
             </button>
           </div>
         </section>
         <section class="lots">
-          <h2 class='lots-title'>
+          <h2 class='lots__heading'>
             лоты
           </h2>
-          <ul class="cards">
-            <li class='card lot-1'>
+          <ul class="lots__card-list">
+            <li class='card card_type_film'>
               <div class="overlay"></div>
-              <a>
+              <a class="card-link">
                 <article class="article">
-                  <h2 class="card-title">Фильм режиссёра, который бросил киношколу</h2>
-                  <p class="card-description">Не просто бросил, а ушёл с первой лекции. 
+                  <h2 class="card__title">Фильм режиссёра, который бросил киношколу</h2>
+                  <p class="card__text">Не просто бросил, а ушёл с первой лекции. 
                     Какой была бы ваша ставка, если бы вы не знали, 
                     что режиссёр — Пол Томас Андерсон?</p>
                 </article>
               </a>
             </li>
-            <li class='card lot-2'>
+            <li class='card card_type_book'>
               <div class="overlay"></div>
-              <a>
+              <a class="card-link">
                 <article class="article">
-                  <h2 class="card-title">Книга, где описан один скучный день из жизни рекламного агента</h2>
-                  <p class="card-description">Объёмом почти в тысячу страниц. Иногда без 
+                  <h2 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h2>
+                  <p class="card__text">Объёмом почти в тысячу страниц. Иногда без 
                     знаков препинания и с переходами на древнеанглийский. 
                     В ней одновременно рассказывается о 16 июня 1904 года 
                     и об истории литературы, начиная с античных времён. 
@@ -78,26 +78,26 @@
                 </article>
               </a>
             </li>
-            <li class='card lot-3'>
+            <li class='card card_type_picture'>
               <div class="overlay"></div>
-              <a1>
+              <a class="card-link">
                 <article class="article">
-                  <h2 class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
-                  <p class="card-description">Ну действительно, там линия, тут кружочек, а 
+                  <h2 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
+                  <p class="card__text">Ну действительно, там линия, тут кружочек, а 
                     здесь и вовсе что-то похожее на инфузорию-туфельку. 
                     Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, 
                     если бы не знали, что это — одна из революционных работ Кандинского?</p>
                 </article>
-              </a1>
+              </a>
             </li>
           </ul>
-          <a class="lots-button">
+          <a class="lots__look-more-link">
             посмотреть больше
           </a>
         </section>
         <section class="about">
           <div class="background-circle">
-              <img src='/images/logo-white.svg' class="logo-white">
+              <img src='/images/logo-white.svg' class="logo-white" alt="Логотип Оно Тебе Надо (белый текст на черном фоне)">
           </div>
           <div>
             <h2 class="about-title">
@@ -121,40 +121,40 @@
         </section>
       </main>
     <footer class="footer">
-      <adress class="adress adress__footer"> 
+      <div class="adress"> 
         <a href="tel:+70000000">+9 999 555 5555</a>
         <a href="mailto:mail@example.com">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265,<br>
          Амстердам</p>
-      </adress>
+        </div>
       <nav>
-        <ul class='nav nav__vertical'>
+        <ul class='footer__links-list'>
           <li>
             <a>главная</a>
           </li>
-          <li class='nav__decorated nav__vertical'>
+          <li class='footer__links-list-decorated-item'>
             <a>посмотреть лоты</a>
           </li>
-          <li class='nav__decorated nav__vertical'>
+          <li class='footer__links-list-decorated-item'>
             <a>об аукционе</a>
           </li>
         </ul>
       </nav>
-      <div>
-        <ul class="social-media">
+      <div >
+        <ul class="footer__social-list">
           <li>
-            <a>
-              <img src="/images/yt.svg" class="social-media__image">
+            <a class="footer__social-link">
+              <img src="/images/yt.svg" class="footer__social-image" alt="Логотип YouTube">
             </a>
           </li>
           <li>
-            <a>
-              <img src="/images/vk.svg" class="social-media__image">
+            <a class="footer__social-link">
+              <img src="/images/vk.svg" class="footer__social-image" alt="Логотип Вконтакте">
             </a>
           </li>
           <li>
-            <a>
-              <img src="/images/pinterest.svg" class="social-media__image">
+            <a class="footer__social-link">
+              <img src="/images/pinterest.svg" class="footer__social-image" alt="Логотип Pinterest">
             </a>
           </li>
         </ul>
