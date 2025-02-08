@@ -1,5 +1,4 @@
 .header {
-  height: 293px;
   padding: 92px 50px 96px 50px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -10,12 +9,13 @@
   display: flex;
   gap: 32px;
   font-size: 18px;
+  text-underline-offset: 3px;
+  list-style: circle;
 }
 
-.header__links-list-decorated-item {
-  list-style: circle;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+.header__links-list-decorated-item a {
+  list-style: none;
+  text-decoration: none;
 }
 
 .header__logo-image {
@@ -40,10 +40,10 @@
 .cover {
   position: relative;
   color: white;
-  height: 757px;
   padding: 160px 50px 50px 50px;
-  background-image: url(/images/cover.jpg);
-  background-size: auto 100%;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
   text-transform: uppercase;
 }
 
@@ -149,26 +149,22 @@
   position: relative;
   z-index: 2;
   width: 334px;
-  max-height: 596px;
+  min-height: 596px;
   padding: 48px 40px 48px 40px;
+  background-size: cover;
+  background-position: center;
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/card-lot-02.jpg);
   }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .card__title {
@@ -197,11 +193,10 @@
 .about {
   display: grid;
   grid-template-columns: 359px 1fr;
-  height: 595px;
   margin: 0px 24px 180px 24px;
 }
 
-.logo-white {
+.logo-light {
   display: block;
   width: 150px;
   height: 120px;
@@ -216,7 +211,7 @@
   background-color: black;
   width: 240px;
   height: 240px;
-  border-radius: 240px;
+  border-radius: 50%;
 }
 
 .about-title {
@@ -228,12 +223,11 @@
 }
 
 .about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   font-size: 20px;
   line-height: 1.2em;
-}
-
-.br {
-  margin-bottom: 24px;
 }
 
 .footer {
