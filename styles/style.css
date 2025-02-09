@@ -24,7 +24,7 @@
   width: 136px;
 }
 
-.adress {
+.address {
   display: flex;
   flex-direction: column;
   padding-right: 36px;
@@ -33,7 +33,7 @@
   text-underline-offset: 4px;
 }
 
-.header__adress {
+.header__address {
   justify-self: end;
 }
 
